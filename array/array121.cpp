@@ -6,7 +6,9 @@ public:
     int maxProfit(vector<int>& prices) {
         int minPrice = prices[0];
         int maxProfit = 0;
-
+//find smallest number 
+//minus with current one for profit 
+// return the maxprofit 
         for(int i = 1; i < prices.size(); i++) {
             minPrice = min(minPrice, prices[i]);
             maxProfit = max(maxProfit, prices[i] - minPrice);
